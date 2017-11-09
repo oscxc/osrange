@@ -3,7 +3,14 @@
 // LICENSE：MIT
 
 'use strict';
-window.osrange = function (mycfg) {
+(function (f) {
+    if (typeof module === "object" && typeof module.exports === "object"){
+        module.exports = f;
+    }
+    else{
+        window.osrange = f;
+    }
+})(function (mycfg) {
     function extend(t,o) {
         for(var n in o){
             t[n]=o[n] ;
@@ -65,7 +72,7 @@ window.osrange = function (mycfg) {
             width: ballWH + 'px',
             height: ballWH + 'px',
             right: -ballWH / 2 + 'px',
-            top: -(ballWH - h) / 2 + 'px'
+            top: (h - ballWH) / 2 + 'px'
         });
 
         progress.appendChild(ball);
@@ -97,4 +104,5 @@ window.osrange = function (mycfg) {
     this.getValue = function () {
         return value;
     };
-};
+});
+
