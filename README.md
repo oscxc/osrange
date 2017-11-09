@@ -54,7 +54,7 @@ var osrange = require('osrange');
 
 4、用作进度条：[`examples/progress.html`](https://oscxc.github.io/osrange/examples/progress.html)
 
-5、多个实例：[`examples/instances.html`](https://oscxc.github.io/osrange/examples/progress.html)
+5、多个实例：[`examples/instances.html`](https://oscxc.github.io/osrange/examples/instances.html)
 
 
 ## License
