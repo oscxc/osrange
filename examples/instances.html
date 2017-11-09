@@ -30,14 +30,14 @@
 
 <script>
     var range = new osrange({
-        id:'range',
+        el:document.querySelector('#range'),
         range:[0,100],
         value:00,
         control:false
     });
 
     var range2 = new osrange({
-        id:'range2',
+        el:document.querySelector('#range2'),
         range:[0,100],
         value:30,
         callback:function (val) {

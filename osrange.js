@@ -26,7 +26,7 @@
     }
 
     var cfg = {
-        id:null,
+        el:null,
         range:[0,1],
         value:0,
         control:true,
@@ -34,7 +34,7 @@
     };
     extend(cfg,mycfg);
 
-    var bg = document.getElementById(cfg.id);
+    var bg = cfg.el;
     bg.style.cursor = 'default';
     var min = cfg.range[0];
     var max = cfg.range[1];
