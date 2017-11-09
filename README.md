@@ -1,4 +1,4 @@
-![osrange](logo.png "osrange")
+![](logo.png)
 
 # 原生js实现的宽度自适应range插件，也可用作进度条
 
@@ -46,15 +46,15 @@ var osrange = require('osrange');
 
 ## Usage examples
 
-1、基本使用（宽度固定）：[`examples/basic.html`](examples/basic.html)
+1、基本使用（宽度固定）：[`examples/basic.html`](https://oscxc.github.io/osrange/examples/basic.html)
 
-2、宽度自适应（百分比）：[`examples/adaptive.html`](examples/adaptive.html)
+2、宽度自适应（百分比）：[`examples/adaptive.html`](https://oscxc.github.io/osrange/examples/adaptive.html)
 
-3、setValue 和 getValue ：[`examples/value.html`](examples/value.html)
+3、setValue 和 getValue ：[`examples/value.html`](https://oscxc.github.io/osrange/examples/value.html)
 
-4、用作进度条：[`examples/progress.html`](examples/progress.html)
+4、用作进度条：[`examples/progress.html`](https://oscxc.github.io/osrange/examples/progress.html)
 
-5、多个实例：[`examples/instances.html`](examples/progress.html)
+5、多个实例：[`examples/instances.html`](https://oscxc.github.io/osrange/examples/progress.html)
 
 
 ## License
