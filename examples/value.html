@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>set get</title>
+    <style>
+        #range{
+            position: relative;
+            margin: 100px auto;
+            width: 80%;
+            height: 6px;
+            background-color: grey;
+            border-radius: 4px;
+        }
+        #range > div{
+            background-color: red;
+            border-radius: 4px;
+        }
+        #range > div > div{
+            background-color: red;
+            /*border-radius: 50%;*/
+        }
+    </style>
+    <script src="../osrange.js"></script>
+</head>
+<body>
+<div id="range"></div>
+
+<button id="setValue">setValue(2000)</button>
+<button id="getValue">getValue</button>
+<script>
+    //自定义 range 范围和初始值
+    var range = new osrange({
+        id:'range',
+        range:[0,10000],
+        value:7000,
+        callback:function (val) {
+            console.log(val);
+        }
+    });
+
+    document.querySelector('#setValue').onclick = function () {
+        range.setValue(2000);
+    }
+    document.querySelector('#getValue').onclick = function () {
+        console.log(range.getValue());
+    }
+</script>
+</body>
+</html>

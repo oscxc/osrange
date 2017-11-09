@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>basic range</title>
+    <style>
+        #range{
+            position: relative;
+            margin: 100px auto;
+            width: 800px;
+            height: 6px;
+            background-color: grey;
+            border-radius: 4px;
+        }
+        #range > div{
+            background-color: red;
+            border-radius: 4px;
+        }
+        #range > div > div{
+            background-color: red;
+            /*border-radius: 50%;*/
+        }
+    </style>
+    <script src="../osrange.js"></script>
+</head>
+<body>
+<div id="range"></div>
+
+<script>
+    // div 固定宽度 800px
+    var range = new osrange({
+        id:'range',
+        range:[0,100],
+        value:70,
+        callback:function (val) {
+            console.log(val);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>two instences</title>
+    <style>
+        #range,#range2{
+            position: relative;
+            margin: 100px auto;
+            width: 80%;
+            height: 6px;
+            background-color: grey;
+            border-radius: 4px;
+        }
+        #range > div,#range2 > div{
+            background-color: red;
+            border-radius: 4px;
+        }
+        #range > div > div,#range2 > div > div{
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="../osrange.js"></script>
+</head>
+<body>
+<div id="range"></div>
+<div id="range2"></div>
+
+
+<script>
+    var range = new osrange({
+        id:'range',
+        range:[0,100],
+        value:00,
+        control:false
+    });
+
+    var range2 = new osrange({
+        id:'range2',
+        range:[0,100],
+        value:30,
+        callback:function (val) {
+            range.setValue(val);
+        }
+    });
+</script>
+</body>
+</html>
