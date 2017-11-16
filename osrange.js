@@ -30,7 +30,9 @@
         range:[0,1],
         value:0,
         control:true,
-        callback:null
+        callback:null,
+        down:null,
+        up:null
     };
     extend(cfg,mycfg);
 
@@ -60,6 +62,8 @@
     setW();
     cb && cb(getVal());
 
+    var _this = this;
+
     if(cfg.control){
         bg.style.cursor = 'pointer';
 
@@ -81,6 +85,7 @@
             e.stopPropagation();
             var rect = bg.getBoundingClientRect();
 
+            cfg.down && cfg.down();
             document.onmousemove = (function handle(e) {
                 p = (e.clientX - rect.left) / rect.width;
                 p = p < 0 ? 0 : p > 1 ? 1 : p;
@@ -89,6 +94,7 @@
                 return handle;
             })(e);
             document.onmouseup = function () {
+                cfg.up && cfg.up();
                 document.onmousemove = null;
             };
         };
