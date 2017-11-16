@@ -56,6 +56,8 @@ var osrange = require('osrange');
 
 5、多个实例：[`examples/instances.html`](https://oscxc.github.io/osrange/examples/instances.html)
 
+6、鼠标按下弹起回调：[`examples/downup.html`](https://oscxc.github.io/osrange/examples/downup.html)
+
 
 ## License
 
