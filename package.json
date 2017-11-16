@@ -1,0 +1,24 @@
+{
+  "name": "osrange",
+  "version": "1.3.0",
+  "description": "原生js实现的宽度自适应range插件，也可用作进度条",
+  "main": "osrange.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscxc/osrange.git"
+  },
+  "keywords": [
+    "range",
+    "osrange",
+    "slider"
+  ],
+  "author": "七八个星天怪",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oscxc/osrange/issues"
+  },
+  "homepage": "https://github.com/oscxc/osrange#readme"
+}
