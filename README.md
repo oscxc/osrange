@@ -59,7 +59,8 @@ var osrange = require('osrange');
 6、鼠标按下弹起回调：[`examples/downup.html`](https://oscxc.github.io/osrange/examples/downup.html)
 
 
-## License
+## 联系我们
 
-[MIT](LICENSE)
+欢迎加入下面QQ群
 
+![](https://oscxc.github.io/Images/doc/contact.jpg)
